@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ggr</groupId>
-    <artifactId>sc-f-chapter1</artifactId>
+    <artifactId>sc-f-chapter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>sc-f-chapter1</name>
+    <name>sc-f-chapter</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>

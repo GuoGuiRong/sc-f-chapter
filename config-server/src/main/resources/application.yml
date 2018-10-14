@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      username:
+      password:
+      server:
+        git:
+          uri: https://github.com/GuoGuiRong/sc-f-chapter/
+          searchPaths: springcloud-config
+server:
+  port: 8888
+
