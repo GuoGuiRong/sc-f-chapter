@@ -9,3 +9,5 @@
 [4] 第四篇:断路器（Hystrix）(Finchley版本)
 
 [5] 第五篇: 路由网关(zuul)(Finchley版本)
+
+[6] 第六篇: 分布式配置中心(Spring Cloud Config)(Finchley版本)
