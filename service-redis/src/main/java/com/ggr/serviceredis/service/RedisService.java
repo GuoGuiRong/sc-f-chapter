@@ -27,6 +27,7 @@ public class RedisService {
         T result = null;
         try(Jedis instance = jedisPool.getResource()) {
             result = jedisCallable.call(instance);
+            log.info("redis执行返回结果result={}",result);
         }catch (Exception e){
             log.error("redis出错了e={}",e);
         }
