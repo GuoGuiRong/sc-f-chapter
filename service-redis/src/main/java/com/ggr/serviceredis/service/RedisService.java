@@ -3,6 +3,7 @@ package com.ggr.serviceredis.service;
 import com.ggr.serviceredis.config.redis.JedisCallable;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -10,7 +11,7 @@ import redis.clients.jedis.JedisPool;
 import java.util.Optional;
 
 
-@Service
+@Component
 @Slf4j
 public class RedisService {
 
