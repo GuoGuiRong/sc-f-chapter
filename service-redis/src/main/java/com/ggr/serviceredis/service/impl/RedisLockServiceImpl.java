@@ -1,22 +1,24 @@
 package com.ggr.serviceredis.service.impl;
 
-import com.ggr.serviceredis.config.redis.JedisCallable;
 import com.ggr.serviceredis.service.RedisLockService;
 import com.ggr.serviceredis.service.RedisService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import redis.clients.jedis.Jedis;
 
 import java.util.Collections;
 import java.util.Optional;
 
 /**
  * Redis 锁的提供方
+ * redis基本原理：
+ * 1. 非堵塞方式获取锁，使用CAS提高获取锁的成功率
+ * 2. 保证加锁和释放锁的是同一个人
+ * 3. 必须设置过期时间避免死锁
  */
 @Component
 @Slf4j
-public class RedisServiceImpl implements RedisLockService {
+public class RedisLockServiceImpl implements RedisLockService {
 
     @Autowired
     RedisService redisService;
