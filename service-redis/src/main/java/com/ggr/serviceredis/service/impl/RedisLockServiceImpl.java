@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.Optional;
 
 /**
- * Redis 锁的提供方
+ * Redis 分布式锁实现
  * redis基本原理：
  * 1. 非堵塞方式获取锁，使用CAS提高获取锁的成功率
  * 2. 保证加锁和释放锁的是同一个人

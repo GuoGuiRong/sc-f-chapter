@@ -1,6 +1,5 @@
 package com.ggr.serviceredis.service;
 
-
 public interface RedisLockService {
 
     /**
